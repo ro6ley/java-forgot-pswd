@@ -4,6 +4,8 @@
 
 This repository contains the code for this [blogpost]() on [StackAbuse](https://stackabuse.com/).
 
+> Please note that this Spring project is an extension of [this one here](https://github.com/chand31290/codingExamples/tree/master/email-registration) as implemented by @chand31290.
+
 ## Getting Started
 
 ### Prerequisites

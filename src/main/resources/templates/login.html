@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"> 
+    <head>  
+        <title>Login</title>  
+    </head>  
+    <body>  
+        <center>
+            <span th:text="${message}"></span> <br/><br/><br/>
+        </center>
+        <center>
+            <form action="#" th:action="@{/login}" th:object="${user}" method="post">  
+                <table>  
+                    <tr>  
+                        <td><label for="emailId">Email</label></td>  
+                        <td><input th:field="*{emailId}" type="text" name="emailId"></input></td>  
+                    </tr>
+                    <tr>  
+                        <td><label for="password">Password</label></td>  
+                        <td><input th:field="*{password}" type="password" name="password"></input></td>  
+                    </tr>  
+                    <tr>  
+                        <td><input type="reset" value="Clear"/></td>  
+                        <td><input type="submit" value="Submit"></input></td>
+                    </tr>
+                </table>  
+            </form>
+
+            <a href="/forgot-password">Forgot Password?</a>
+        </center>
+
+    </body>  
+</html>  
